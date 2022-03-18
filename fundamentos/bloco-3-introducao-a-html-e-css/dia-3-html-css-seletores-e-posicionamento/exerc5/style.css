@@ -1,0 +1,82 @@
+/* Todas as li de todas as ol ficam com cor de fundo amarelo */
+ol li {
+  background-color: yellow;
+}
+
+/* Todas as li de ol com números pares, ficam com a cor da fonte verde */
+ol li:nth-child(even) {
+  color: green;
+}
+
+/* Todas as li de ol que são ímpares, ficam em maiúsculo */
+ol li:nth-child(odd) {
+  text-transform: uppercase;
+}
+
+/* Faz todas as tags Header ficarem na cor vermelha */
+h1, h2, h3 {
+  color: red;
+}
+
+/* As tags header que estiverem em itálico, aumenta o tamanho da fonte para 40px e coloca borda */
+h1 em, h2 em, h3 em {
+  font-size: 40px;
+  border: 1px solid black;
+}
+
+/* Deixa todos os li da página com tamanho de fonte de 20px */
+li {
+  font-size: 20px;
+}
+
+/* Deixa todos os li que estão em itálico em negrito */
+li em {
+  font-weight: bold;
+}
+
+/* ul.linguagens li:nth-of-type(1) {
+  color: blue
+}
+
+ul.linguagens li:nth-of-type(2) {
+  color: blue
+}
+
+ul.linguagens li:nth-of-type(3) {
+  color: blue
+} */
+
+/* Dentro da classe linguagens, seleciona os 3 primeiros li. Fonte: https://developer.mozilla.org/pt-BR/docs/Web/CSS/:nth-child */
+.linguagens li:nth-child(-n+3) {
+  color: blue;
+}
+
+.pink-background {
+  background-color: pink;
+}
+
+/* Todo li que estiver contido na classe aliados fica em negrito quando passa o mouse */
+.aliados li:hover {
+  font-weight: 700;
+}
+
+/* Todo link a que estiver dentro de um li da classe aliados e tem o href correspondente fica com a cor da fonte laranja*/
+.aliados li a[href*="stackoverflow"] {
+  color: orange;
+}
+
+.aliados li a[href*="w3schools"] {
+  color: green;
+}
+
+.aliados li a[href*="mozilla"] {
+  color: black;
+}
+
+.aliados li a[href*="devdocs"] {
+  color: yellow;
+}
+
+.aliados li a[href*="trybe"] {
+  color: green;
+}
