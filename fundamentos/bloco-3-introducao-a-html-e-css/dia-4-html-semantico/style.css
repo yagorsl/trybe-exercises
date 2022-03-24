@@ -1,0 +1,119 @@
+.header {
+  border: 1px solid black;
+  border-left: none;
+  border-right: none;
+}
+
+.body {
+  background-color: #85C88A;
+  font-family: monospace;
+  color: rgb(31, 32, 65);
+  text-align: center;
+  border-left: none;
+  border-right: none;
+}
+
+.links {
+  text-decoration: none;
+  background-color: #6FB2D2;
+  padding: 8px;
+  border-radius: 5px;
+  color: white;
+}
+
+.nav-link {
+  display: inline;
+  text-align: center;
+}
+
+.reference-link {
+  display: inline;
+}
+
+#table-p {
+  text-align: left;
+}
+
+.picture {
+  position: relative;
+  text-align: center;
+  width: 774px;
+  padding: 10px;
+  background-color: #6FB2D2;
+  border-radius: 7px;
+}
+
+.color-list {
+  list-style: none;
+}
+
+.red:hover {
+  font-size: 15px;
+  color: red;
+  font-weight: bold;
+}
+
+.green:hover {
+  font-size: 15px;
+  color: green;
+  font-weight: bold;
+}
+
+.blue:hover {
+  font-size: 15px;
+  color: blue;
+  font-weight: bold;
+}
+
+.article {
+  border: 1px solid black;
+  border-left: none;
+  border-right: none;
+}
+
+.section1 {
+  border: 1px solid black;
+  border-left: none;
+  border-right: none;
+}
+
+.section2 {
+  border: 1px solid black;
+  border-left: none;
+  border-right: none;
+}
+
+.section3 {
+  border: 1px solid black;
+  border-left: none;
+  border-right: none;
+}
+
+.section4 {
+  border: 1px solid black;
+  border-left: none;
+  border-right: none;
+}
+
+.table {
+  border: 1px solid black;
+  border-left: none;
+  border-right: none;
+}
+
+.aside {
+  border: 1px solid black;
+  border-left: none;
+  border-right: none;
+}
+
+.footer {
+  border: 1px solid black;
+  background-color: #EEEEEE;
+  border-left: none;
+  border-right: none;
+}
+
+#video {
+  text-decoration: none;
+}
