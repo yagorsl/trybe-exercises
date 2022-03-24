@@ -1,0 +1,23 @@
+h1, p {
+  text-align: center;
+}
+
+ol:hover, ul:hover {
+  background-color: green;
+}
+/* altera o que acontece quando passa o mouse em cima do elemento */
+
+li:active {
+  font-family: "Montserrat", sans-serif;
+}
+/* :active altera o que acontece quando o elemento é clicado */
+
+/* ol, ul {
+  list-style: none;
+} */
+
+li {
+  list-style: none;
+}
+
+/* Em CSS, elementos separados por vírgula indicam relação de agrupamento, já os separados por espaço indicam descendência */
