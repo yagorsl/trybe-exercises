@@ -6,7 +6,7 @@ const num3 = 60;
 
 let isOdd = false;
 
-if ((num1 % 2) != 0 || (num2 % 2) != 0 || (num3 % 2) != 0) {
+if ((num1 % 2) !== 0 || (num2 % 2) !== 0 || (num3 % 2) !== 0) {
   isOdd = true;
 }
 
