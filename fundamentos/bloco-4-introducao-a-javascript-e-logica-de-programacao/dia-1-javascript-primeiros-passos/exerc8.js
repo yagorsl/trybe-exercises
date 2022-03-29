@@ -11,3 +11,16 @@ if ((num1 % 2) === 0 || (num2 % 2) === 0 || (num3 % 2) === 0) {
 }
 
 // usa-se o operador % para verificar se o resto da divisão por 2 é 0. Essa é a condição para um número ser par.
+
+// Solução alternativa utilizando apenas um if:
+const firstNumber = 40;
+const secondNumber = 34;
+const thirdNumber = 23;
+
+let isEven = false;
+
+if ((num1 % 2) === 0 || (num2 % 2) === 0 || (num3 % 2) === 0) {
+  isEven = true;
+}
+
+console.log(isEven);
