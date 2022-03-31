@@ -6,7 +6,7 @@ let lowerNumber = numbers[0];
 for (index = 0; index < numbers.length; index += 1) {
   if (numbers[index] <= lowerNumber) {
     lowerNumber = numbers[index];
-  }
-}
+  };
+};
 
 console.log(lowerNumber);

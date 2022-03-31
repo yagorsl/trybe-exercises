@@ -6,11 +6,11 @@ let oddNumbers = 0;
 for (index = 0; index < numbers.length; index += 1) {
   if (numbers[index] % 2 !== 0) {
     oddNumbers = oddNumbers + 1;
-  }
-}
+  };
+};
 
 if (oddNumbers === 0) {
   console.log('nenhum valor ímpar encontrado');
 } else {
   console.log(oddNumbers);
-}
+};
