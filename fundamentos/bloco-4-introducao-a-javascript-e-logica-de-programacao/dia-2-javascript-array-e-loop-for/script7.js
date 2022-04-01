@@ -10,3 +10,12 @@ for (index = 0; index < numbers.length; index += 1) {
 };
 
 console.log(lowerNumber);
+
+// solução alternativa utilizando for/of:
+for (number of numbers) {
+  if (number <= lowerNumber) {
+    lowerNumber = number;
+  };
+};
+
+console.log(lowerNumber);

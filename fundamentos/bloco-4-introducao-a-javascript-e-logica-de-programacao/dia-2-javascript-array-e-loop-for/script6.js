@@ -14,3 +14,16 @@ if (oddNumbers === 0) {
 } else {
   console.log(oddNumbers);
 };
+
+// solução alternativa com for/of:
+for (number of numbers) {
+  if (number % 2 !== 0) {
+    oddNumbers = oddNumbers + 1;
+  };
+};
+
+if (oddNumbers === 0) {
+  console.log('Nenhum valor ímpar encontrado');
+} else {
+  console.log(oddNumbers);
+};

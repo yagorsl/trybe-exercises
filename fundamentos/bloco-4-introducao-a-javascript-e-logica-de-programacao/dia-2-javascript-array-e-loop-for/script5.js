@@ -11,3 +11,12 @@ for (let index = 0; index < numbers.length; index += 1) {
 };
 
 console.log(higherNumber);
+
+// solução alternativa usando o for/of:
+for (number of numbers) {
+  if (number >= higherNumber) {
+    higherNumber = number;
+  };
+};
+
+console.log(higherNumber);
