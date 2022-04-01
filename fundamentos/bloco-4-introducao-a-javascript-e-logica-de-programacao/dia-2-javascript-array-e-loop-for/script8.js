@@ -2,8 +2,8 @@
 
 let numbers = [];
 
-for (index = 1; index <= 25; index += 1) {
-  numbers.push(index);
+for (number = 1; number <= 25; number += 1) {
+  numbers.push(number);
 };
 
 console.log(numbers);
