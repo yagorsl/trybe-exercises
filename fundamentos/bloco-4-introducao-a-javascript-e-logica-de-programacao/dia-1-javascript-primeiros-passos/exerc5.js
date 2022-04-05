@@ -31,3 +31,34 @@ if (allAnglesArePositive) {
 } else {
   console.log("Erro: ângulo inválido");
 };
+
+// solulção utilizando funções
+function isTriangle(angleA, angleB, angleC) {
+  let allAnglesArePositive = angleA > 0 && angleB > 0 && angleC > 0;
+  let sumOfAngles = angleA + angleB + angleC;
+
+  if (allAnglesArePositive) {
+    if (sumOfAngles === 180) {
+      return true
+    } else {
+      return false;
+    }
+  } else {
+    return 'Erro. Ângulo inválido';
+  };
+};
+
+console.log(isTriangle(100, 50, -40));
+
+// solução alternativa;
+function triangle(angleA, angleB, angleC) {
+  if (angleA < 0 || angleB < 0 || angleC < 0) {
+    return 'Erro. Ângulo inválido';
+  } else if (angleA + angleB + angleC === 180) {
+    return true;
+  } else {
+    return false;
+  };
+};
+
+console.log(triangle(100, 50, -40));

@@ -1,13 +1,15 @@
-// Faça um programa que retorne o maior de três números. Defina no começo do programa três constantes com os valores que serão comparados.
+// Faça um programa que retorne o maior de três números. Utilize funções;
 
-const num1 = 80;
-const num2 = 65;
-const num3 = 60;
+function higherNumber(a, b, c) {
+  if (a > b && a > c) {
+    return a + ' é o maior número';
+  } else if (b > a && b > c) {
+    return b + ' é o maior número';
+  } else if (c > a && c > b) {
+    return c + ' é o maior número';
+  } else {
+    return 'Os números são iguais';
+  };
+};
 
-if (num1 > num2 && num1 > num3) {
-  console.log(`${num1} é o maior número`);
-} else if (num2 > num1 && num2 > num3) {
-  console.log(`${num2} é o maior número`);
-} else {
-  console.log(`${num3} é o maior número`);
-}
+console.log(higherNumber(70, 70, 70));

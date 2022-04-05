@@ -1,10 +1,33 @@
-// Faça cinco programas, um para cada operação aritmética básica. Seu programa deve ter duas constantes, a e b , definidas no começo com os valores que serão operados. Faça programas para adição, subtração, multiplicação, divisão, módulo.
+// Faça cinco programas, um para cada operação aritmética básica. Faça programas para adição, subtração, multiplicação, divisão, módulo.
+// Utilize funções;
 
-const a = 20;
-const b = 25;
+function sum(a, b) {
+  let result = a + b;
+  return 'O resultado é: ' + result;
+};
 
-console.log("Soma: " + (a + b));
-console.log("Subtração: " + (a - b));
-console.log("Multiplicação: " + (a * b));
-console.log("Divisão: " + (a / b));
-console.log("Módulo: " + (a % b));
+function subtraction(a, b) {
+  let result = a - b;
+  return 'O resultado é: ' + result;
+};
+
+function multiplication(a, b) {
+  let result = a * b;
+  return 'O resultado é: ' + result;
+};
+
+function division(a, b) {
+  let result = a / b;
+  return 'O resultado é: ' + result;
+};
+
+function module(a, b) {
+  let result = a % b;
+  return 'O resultado é: ' + result;
+};
+
+console.log(sum(20, 10));
+console.log(subtraction(20, 10));
+console.log(multiplication(20, 10));
+console.log(division(20, 10));
+console.log(module(20, 10));

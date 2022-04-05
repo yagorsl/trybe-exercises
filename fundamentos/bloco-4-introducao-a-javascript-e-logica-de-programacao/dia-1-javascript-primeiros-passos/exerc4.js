@@ -1,11 +1,13 @@
-// Faça um programa que, dado um valor definido numa constante, retorne "positive" se esse valor for positivo, "negative" se for negativo e "zero" caso contrário.
+// Faça um programa que, dado um valor definido como parâmetro, retorne "positive" se esse valor for positivo, "negative" se for negativo e "zero" caso contrário. Utilize funções;
 
-const number = 0;
+function isPositive(number) {
+  if (number > 0) {
+    return number + ' é um número positivo';
+  } else if (number < 0) {
+    return number + ' é um número negativo';
+  } else {
+    return number + ' é zero';
+  };
+};
 
-if (number > 0) {
-  console.log('positive');
-} else if (number < 0) {
-  console.log('negative');
-} else {
-  console.log('zero')
-}
+console.log(isPositive(40));

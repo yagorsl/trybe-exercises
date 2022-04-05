@@ -1,10 +1,13 @@
-// Faça um programa que retorne o maior de dois números. Defina no começo do programa duas constantes com os valores que serão comparados.
+// Faça um programa que retorne o maior de dois números. Utilize funções.
 
-const num1 = 75;
-const num2 = 85;
+function higherNumber(a, b) {
+  if (a > b) {
+    return a + ' é maior que ' + b;
+  } else if (b > a) {
+    return b + ' é maior que ' + a;
+  } else {
+    return 'Os números são iguais'
+  };
+};
 
-if (num1 > num2) {
-  console.log(`${num1} é maior que ${num2}`);
-} else {
-  console.log(`${num2} é maior que ${num1}`);
-}
+console.log(higherNumber(20, 10));
