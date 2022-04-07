@@ -8,7 +8,7 @@ function somatorio(n) {
     total = total + index;
   }
 
-  return total
+  return total;
 };
 
 console.log(somatorio(5));
