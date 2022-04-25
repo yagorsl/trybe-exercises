@@ -22,3 +22,14 @@ sectionTag.appendChild(paragraphTag);
 const leftSection = document.createElement('section');
 leftSection.className = 'left-content';
 mainTag.appendChild(leftSection);
+
+// 6. Adicione a tag section com a classe right-content como filho da tag main criada no passo 2
+const rightSection = document.createElement('section');
+rightSection.className = 'right-content';
+mainTag.appendChild(rightSection);
+
+// 7. Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
+const image = document.createElement('img');
+image.src = 'https://picsum.photos/200';
+image.className = 'small-image';
+leftSection.appendChild(image);
