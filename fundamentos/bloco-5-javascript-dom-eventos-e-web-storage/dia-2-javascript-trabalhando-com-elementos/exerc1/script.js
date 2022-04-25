@@ -45,3 +45,10 @@ for (num in numbers) {
   listItem.innerHTML = numbers[num];
   ulElement.appendChild(listItem);
 };
+
+// 9. Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+for (index = 0; index < 3; index += 1) {
+  const h3Element = document.createElement('h3');
+  h3Element.innerHTML = 'Isso é uma tag h3';
+  mainTag.appendChild(h3Element);
+};
