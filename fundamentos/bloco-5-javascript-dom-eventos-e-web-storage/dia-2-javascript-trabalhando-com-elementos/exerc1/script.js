@@ -55,4 +55,11 @@ for (index = 0; index < 3; index += 1) {
 
 // BONUS
 // 1. Adicione a classe title na tag h1 criada.
-elementH1.className = 'title';
+const title = document.querySelector('h1');
+title.className = 'title';
+
+// 2. Adicione a classe description nas 3 tags h3 criadas;
+const elementH3 = document.getElementsByTagName('h3');
+for (index = 0; index < elementH3.length; index += 1) {
+  elementH3[index].className = 'description';
+};
