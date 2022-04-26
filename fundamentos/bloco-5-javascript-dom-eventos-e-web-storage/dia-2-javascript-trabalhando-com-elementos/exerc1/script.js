@@ -52,3 +52,7 @@ for (index = 0; index < 3; index += 1) {
   h3Element.innerHTML = 'Isso é uma tag h3';
   mainTag.appendChild(h3Element);
 };
+
+// BONUS
+// 1. Adicione a classe title na tag h1 criada.
+elementH1.className = 'title';
