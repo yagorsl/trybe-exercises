@@ -98,22 +98,22 @@ addFridayBtn('Sexta-Feira');
 // É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial exibindo os dias.
 
 function changeFriday(fridaysArray) {
-  const fridayDays = document.getElementsByClassName('friday');
+  const btnFriday = document.querySelector('#btn-friday');
 
-  const fridayBtn = document.querySelector('#btn-friday');
+  const fridays = document.querySelectorAll('.friday');
 
-  fridayBtn.addEventListener('click', function() {
-    for (index = 0; index < fridayDays.length; index += 1) {
-      if (fridayDays[index].innerHTML !== '#SEXTOU!') {
-        fridayDays[index].innerHTML = '#SEXTOU!'; 
+  btnFriday.addEventListener('click', function () {
+    for (friday in fridays) {
+      if (fridays[friday].innerHTML !== '#SEXTOU!!!') {
+        fridays[friday].innerHTML = '#SEXTOU!!!';
       } else {
-        fridayDays[index].innerHTML = fridaysArray[index];
+        fridays[friday].innerHTML = fridaysArray[friday];
       };
     };
   });
 };
 
-let dezFridays = [4, 11, 18, 25];
+const dezFridays = [4, 11, 18, 25];
 changeFriday(dezFridays);
 
 // 6. Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
