@@ -34,9 +34,13 @@ function addDaysOfMonth () {
       listItem.className = 'day holiday';
     };
 
-    if (dezDaysList[num] === 4 || dezDaysList[num] === 11 || dezDaysList[num] === 18 || dezDaysList[num] === 25) {
-      listItem.className = 'day holiday friday'
+    if (dezDaysList[num] === 4 || dezDaysList[num] === 11 || dezDaysList[num] === 18) {
+      listItem.className = 'day friday'
     };
+
+    if (dezDaysList[num] === 25) {
+      listItem.className = 'day holiday friday'
+    }
   };
 };
 addDaysOfMonth();
@@ -54,3 +58,23 @@ function addHolidayBtn (string) {
   btnContainer.appendChild(btn);
 };
 addHolidayBtn('Feriados');
+
+// 3. Implemente uma função que adicione ao botão "Feriados" um evento de "click" que muda a cor de fundo dos dias que possuem a classe "holiday" .
+// É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial com a cor "rgb(238,238,238)" .
+
+function displayHolidays() {
+  const holidayBtn = document.querySelector('#btn-holiday');
+
+  const holidays = document.querySelectorAll('.holiday');
+
+  holidayBtn.addEventListener('click', function() {
+    for (index = 0; index < holidays.length; index += 1) {
+      if (holidays[index].style.backgroundColor === 'white') {
+        holidays[index].style.backgroundColor = 'rgb(238,238,238)';
+      } else {
+        holidays[index].style.backgroundColor = 'white';
+      };
+    };
+  });
+};
+displayHolidays();
