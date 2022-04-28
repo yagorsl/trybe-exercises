@@ -68,11 +68,11 @@ function displayHolidays() {
   const holidays = document.querySelectorAll('.holiday');
 
   holidayBtn.addEventListener('click', function() {
-    for (index = 0; index < holidays.length; index += 1) {
-      if (holidays[index].style.backgroundColor === 'white') {
-        holidays[index].style.backgroundColor = 'rgb(238,238,238)';
+    for (holiday in holidays) {
+      if (holidays[holiday].style.backgroundColor !== 'white') {
+        holidays[holiday].style.backgroundColor = 'white';
       } else {
-        holidays[index].style.backgroundColor = 'white';
+        holidays[holiday].style.backgroundColor = 'rgb(238,238,238)';
       };
     };
   });
@@ -115,3 +115,26 @@ function changeFriday(fridaysArray) {
 
 let dezFridays = [4, 11, 18, 25];
 changeFriday(dezFridays);
+
+// 6. Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
+// Dica - Propriedade: event.target .
+
+function mouseOver() {
+  const days = document.querySelector('#days');
+
+  days.addEventListener('mouseover', function(event) {
+    event.target.style.fontSize = '30px';
+    event.target.style.fontWeight = '600';
+  });
+};
+mouseOver();
+
+function mouseOut() {
+  const days = document.querySelector('#days');
+
+  days.addEventListener('mouseout', function(event) {
+    event.target.style.fontSize = '20px';
+    event.target.style.fontWeight = '200';
+  });
+};
+mouseOut();
