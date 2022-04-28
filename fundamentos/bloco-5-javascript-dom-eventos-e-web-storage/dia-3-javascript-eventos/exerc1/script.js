@@ -48,6 +48,7 @@ function addHolidayBtn (string) {
   const btnContainer = document.querySelector('.buttons-container');
 
   const btn = document.createElement('button');
+  btn.id = 'btn-holiday';
   btn.innerHTML = string;
 
   btnContainer.appendChild(btn);
