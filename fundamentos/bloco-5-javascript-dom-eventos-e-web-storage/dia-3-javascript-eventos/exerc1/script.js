@@ -183,17 +183,47 @@ classSelection();
 // Ao clicar novamente no dia com a cor da legenda, a sua cor deverá voltar à configuração inicial rgb(119,119,119).
 
 function setDayColor() {
-  const selectedTask = document.getElementsByClassName('task selected');
   const days = document.querySelector('#days');
+  const selectedTask = document.getElementsByClassName('task selected');
   const taskDiv = document.querySelector('.task');
 
   days.addEventListener('click', function(event) {
     if (selectedTask.length > 0 && event.target.style.color !== taskDiv.style.backgroundColor) {
       event.target.style.color = selectedTask[0].style.backgroundColor;
     } else if (event.target.style.color === taskDiv.style.backgroundColor && selectedTask.length !== 0) {
-      event.target.style.color = 'rgb(119,119,119)';
+      event.target.style.color = 'rgb(119,119,119)'
+    };
+  });
+};
+setDayColor();
+
+// 10. Vamos adicionar compromissos ao seu calendário? Implemente uma função que, ao digitar um compromisso na caixa de texto "COMPROMISSOS", adiciona o item à lista "MEUS COMPROMISSOS" ao clicar no botão "ADICIONAR".
+// Se nenhum caractere for inserido no campo input , a função deve retornar um alert com uma mensagem de erro ao clicar em "ADICIONAR".
+// Ao pressionar a tecla "enter" o evento também deverá ser disparado.
+function addCompromises() {
+  const addBtn = document.querySelector('#btn-add');
+  const taskList = document.querySelector('.task-list');
+  const inputField = document.querySelector('#task-input');
+
+  addBtn.addEventListener('click', function () {
+    if (inputField.value.length < 1) {
+      alert('Digite ao menos um caractere');
+    } else {
+      const taskItem = document.createElement('li');
+      taskItem.innerText = inputField.value;
+      taskList.appendChild(taskItem);
+      inputField.value = '';
+    };
+  });
+
+  inputField.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter' && inputField.value.length > 0) {
+      const taskItem = document.createElement('li');
+      taskItem.innerText = inputField.value;
+      taskList.appendChild(taskItem);
+      inputField.value = '';
     };
   });
 };
 
-setDayColor();
+addCompromises();
